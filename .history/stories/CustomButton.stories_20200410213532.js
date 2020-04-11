@@ -3,7 +3,6 @@ import CustomButton from "../comps/CustomButton";
 import Header from "../comps/Header"
 import Chat from "../comps/Chat"
 import Input from "../comps/Input"
-import ChatPage from "../pages/ChatPage"
 
 export default {
     title: "My comps",
@@ -11,23 +10,17 @@ export default {
 };
 
 export const MyCustomButton = () => <CustomButton />;
-
 export const MyCustomButtonWithOptions = () => <CustomButton
     color="#ffcf0f"
     text="OK"
     OnClick={OkayClick}
 />
 export const MyHeader = () => <Header />;
-
 export const MyInput = () => <Input />;
-
 export const MyInputWithPlaceholder = () => <Input
     placeholder="Custom placeholder"
 />;
-
 export const MyChat = () => <Chat />;
-
-export const MyChatPage = () => <ChatPage />;
 
 // export const PageWithCustomButtons = () => <div>
 
@@ -74,9 +67,9 @@ export const MyChatPage = () => <ChatPage />;
 //     alert("cancel")
 // }
 
-function OkayClick(){
-    alert("okay")
-}
+// function OkayClick(){
+//     alert("okay")
+// }
 
 // // function AnnoyingAlert(){
 // //     alert("Hi hi hi")

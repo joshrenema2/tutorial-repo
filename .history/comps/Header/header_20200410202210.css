@@ -1,13 +1,13 @@
 .header_box {
     width: 100%;
     display: flex;
-    /* background-color: #6200ee;
-    color: white; */
+    background-color: #6200ee;
+    color: white;
     margin-bottom:5px;
 }
 
-/* .header_box_text {
+.header_box_text {
     display: flex;
     position: relative;
     left: 50%;
-} */
+}

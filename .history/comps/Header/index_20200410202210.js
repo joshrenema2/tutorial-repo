@@ -5,24 +5,24 @@
 import React from "react";
 import "./header.css";
 
-const Header = ({text, fontSize, color, cursor}) => <div
+const Header = ({fontSize, color, onMouseOver, cursor}) => <div
 style={{color:color, fontSize:fontSize, cursor:cursor}}
 className="header_box"
-// onMouseOver={onMouseOver}
+onMouseOver={onMouseOver}
 >
-    <h1> {text} </h1>
+    <h1
+     className="header_box_text">Header</h1>
 </div>
 
-// function MouseOver(){
-//     alert("mouse is over");
-// }
+function MouseOver(){
+    alert("mouse is over");
+}
 
 Header.defaultProps = {
     fontSize:12,
-    text: "Header",
-    // color:"#fff",
-    // // onMouseOver:MouseOver,
-    // cursor:"pointer",
+    color:"#fff",
+    onMouseOver:MouseOver,
+    cursor:"pointer",
 }
 
 export default Header;

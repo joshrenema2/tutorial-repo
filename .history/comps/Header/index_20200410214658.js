@@ -19,7 +19,7 @@ className="header_box"
 
 Header.defaultProps = {
     fontSize:12,
-    text: "Header",
+    text="Header",
     // color:"#fff",
     // // onMouseOver:MouseOver,
     // cursor:"pointer",

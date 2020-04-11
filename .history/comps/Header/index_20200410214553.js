@@ -10,7 +10,8 @@ style={{color:color, fontSize:fontSize, cursor:cursor}}
 className="header_box"
 // onMouseOver={onMouseOver}
 >
-    <h1> {text} </h1>
+    <h1
+     className="header_box_text">Header</h1>
 </div>
 
 // function MouseOver(){
@@ -19,7 +20,7 @@ className="header_box"
 
 Header.defaultProps = {
     fontSize:12,
-    text: "Header",
+    text="Header",
     // color:"#fff",
     // // onMouseOver:MouseOver,
     // cursor:"pointer",
