@@ -55,7 +55,7 @@ function CheckResponse(inp) {
         case "hi":
             return "i love pi";
         case "how are you":
-            return "great";
+            return "greaaaaaaaaaaaaat :)";
 
         default:
             return "idk what ur saying";

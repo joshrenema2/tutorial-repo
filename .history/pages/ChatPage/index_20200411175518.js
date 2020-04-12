@@ -15,8 +15,6 @@ const ChatPage = () => {
     const [welcome, setWelcome] = useState("welcome to my app");
     const [msg, setMsg] = useState("pls type smthng");
     const [resp, setResp] = useState("pls respond");
-    const [color, setColor] = useState("#9fcd6a")
-    const [text, setText] = useState("custom button")
 
     return <div>
         <div className="welcome">
@@ -33,29 +31,19 @@ const ChatPage = () => {
             <Input onClick={(val) => {
                 setMsg(val);
                 var new_resp = CheckResponse(val);
-                setResp(new_resp);
+                setResp(new_resp)
                 // if (val === "hi") {
                 //     setResp("i love pi")
                 // }
             }} />
         </div>
-        <div className="custom_button">
-            <CustomButton text={text} color={color} onClick={() =>{
-                setColor("#DAD");
-                setText("now this is a REALLY custom button :)");
-            }}
-            //setText setColor
-            />
-        </div>
     </div>
 }
 
 function CheckResponse(inp) {
-    switch (inp.toLowerCase) {
+    switch (inp) {
         case "hi":
             return "i love pi";
-        case "how are you":
-            return "great";
 
         default:
             return "idk what ur saying";

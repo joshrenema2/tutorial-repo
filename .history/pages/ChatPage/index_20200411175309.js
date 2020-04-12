@@ -15,8 +15,6 @@ const ChatPage = () => {
     const [welcome, setWelcome] = useState("welcome to my app");
     const [msg, setMsg] = useState("pls type smthng");
     const [resp, setResp] = useState("pls respond");
-    const [color, setColor] = useState("#9fcd6a")
-    const [text, setText] = useState("custom button")
 
     return <div>
         <div className="welcome">
@@ -26,41 +24,30 @@ const ChatPage = () => {
             setWelcome("start by sending a msg");
         }}>
             <Chat msg={msg} />
-            <p />
-            <Chat img={"https://www.pngrepo.com/download/42220/loading.png"} backgroundColor="#FAB" name="josh" msg={resp} />
+            <p/>
+            <Chat img={"https://www.pngrepo.com/download/42220/loading.png"}backgroundColor="#FAB" name="josh" msg={resp} />
         </div>
         <div className="controls">
             <Input onClick={(val) => {
                 setMsg(val);
-                var new_resp = CheckResponse(val);
-                setResp(new_resp);
+                var resp = CheckResponse(val);
                 // if (val === "hi") {
                 //     setResp("i love pi")
                 // }
             }} />
         </div>
-        <div className="custom_button">
-            <CustomButton text={text} color={color} onClick={() =>{
-                setColor("#DAD");
-                setText("now this is a REALLY custom button :)");
-            }}
-            //setText setColor
-            />
-        </div>
     </div>
 }
 
-function CheckResponse(inp) {
-    switch (inp.toLowerCase) {
-        case "hi":
-            return "i love pi";
-        case "how are you":
-            return "great";
+function CheckResponse(inp){
+switch(inp){
+    case"hi";
+    return"i love pi";
 
-        default:
-            return "idk what ur saying";
+    default:
+        return "idk what ur saying";
 
-    }
+}
 }
 
 ChatPage.defaultProps = {

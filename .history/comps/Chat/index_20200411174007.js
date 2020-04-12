@@ -20,7 +20,7 @@ Chat.defaultProps = {
     msg: "please type something",
     img: avatarImg,
     backgroundColor: "#EEE",
-    name:"avatar"
+    name:"user1"
 }
 
 export default Chat;

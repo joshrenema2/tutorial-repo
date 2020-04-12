@@ -11,14 +11,14 @@ const Input = ({ placeholder, onClick}) => {
             setVal(e.target.value);
         }} type="text" placeholder={placeholder} />
         <CustomButton onClick={()=>{
-            onClick(val);
+            alert(val)
         }} text="Send" color="#00c7ff"
         />
     </div>;
 }
 
 Input.defaultProps = {
-    placeholder: "Type your chat here...",
+    placeholder: "Type your chat here..."
     onClick:()=>{}
 }
 

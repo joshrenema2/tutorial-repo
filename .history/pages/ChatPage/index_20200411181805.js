@@ -40,9 +40,9 @@ const ChatPage = () => {
             }} />
         </div>
         <div className="custom_button">
-            <CustomButton text={text} color={color} onClick={() =>{
-                setColor("#DAD");
-                setText("now this is a REALLY custom button :)");
+            <CustomButton text="jjjjj" color={} onClick={() =>{
+                setColor();
+                setText();
             }}
             //setText setColor
             />
@@ -55,7 +55,7 @@ function CheckResponse(inp) {
         case "hi":
             return "i love pi";
         case "how are you":
-            return "great";
+            return "greaaaaaaaaaaaaat :)";
 
         default:
             return "idk what ur saying";

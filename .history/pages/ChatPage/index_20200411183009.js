@@ -54,8 +54,9 @@ function CheckResponse(inp) {
     switch (inp.toLowerCase) {
         case "hi":
             return "i love pi";
-        case "how are you":
-            return "great";
+            
+        case "are you okay?":
+            return "greaaaaaaaaaaaaat :)";
 
         default:
             return "idk what ur saying";

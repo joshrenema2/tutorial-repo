@@ -15,8 +15,6 @@ const ChatPage = () => {
     const [welcome, setWelcome] = useState("welcome to my app");
     const [msg, setMsg] = useState("pls type smthng");
     const [resp, setResp] = useState("pls respond");
-    const [color, setColor] = useState("#9fcd6a")
-    const [text, setText] = useState("custom button")
 
     return <div>
         <div className="welcome">
@@ -39,14 +37,6 @@ const ChatPage = () => {
                 // }
             }} />
         </div>
-        <div className="custom_button">
-            <CustomButton text={text} color={color} onClick={() =>{
-                setColor("#DAD");
-                setText("now this is a REALLY custom button :)");
-            }}
-            //setText setColor
-            />
-        </div>
     </div>
 }
 
@@ -55,7 +45,7 @@ function CheckResponse(inp) {
         case "hi":
             return "i love pi";
         case "how are you":
-            return "great";
+            reurn "greaaaaaaaaaaaaat :)";
 
         default:
             return "idk what ur saying";
