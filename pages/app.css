@@ -1,0 +1,11 @@
+.main_app{
+    position:relative;
+    left:0;
+    opacity:1;
+    transition:opacity 1s, left 1s;
+    overflow-x:hidden;
+}
+
+*{
+    font-family: 'Zilla Slab', serif;
+}

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./chatpage.css";
 import Chat from "../../comps/Chat";
 import CustomButton from "../../comps/CustomButton";
 import Header from "../../comps/Header";
 import Input from "../../comps/Input";
+import {FaTrash} from 'react-icons/fa';
 
 // var welcome_state = "welcome to my app"
 // function ChangeWelcome(){
@@ -18,7 +19,14 @@ const ChatPage = () => {
     const [color, setColor] = useState("#9fcd6a")
     const [text, setText] = useState("custom button")
 
-    return <div>
+    useEffect(() => {
+        setTimeout(() => {
+            document.querySelector("#chatpage").style.left = 0;
+        }, 50)
+    }, []);
+
+    return <div id="chatpage">
+        <FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/>
         <div className="welcome">
             <Header fontSize={16} text={welcome} />
         </div>
@@ -40,7 +48,7 @@ const ChatPage = () => {
             }} />
         </div>
         <div className="custom_button">
-            <CustomButton text={text} color={color} onClick={() =>{
+            <CustomButton text={text} color={color} onClick={() => {
                 setColor("#DAD");
                 setText("now this is a REALLY custom button :)");
             }}
