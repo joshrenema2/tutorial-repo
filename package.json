@@ -11,10 +11,6 @@
     "build": "next build",
     "start": "next start -p $PORT"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joshrenema2/tutorial-repo.git"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -33,9 +29,5 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0"
-  },
-  "engines": {
-    "node": ">=12.16.1",
-    "npm": ">=6.13.4"
   }
 }
