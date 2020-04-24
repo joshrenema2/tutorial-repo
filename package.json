@@ -1,6 +1,10 @@
 {
   "name": "tutorial-repo",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +13,7 @@
     "build-storybook": "build-storybook",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "author": "",
   "license": "ISC",
