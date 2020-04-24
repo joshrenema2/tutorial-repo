@@ -2,9 +2,6 @@
   "name": "tutorial-repo",
   "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": "12.x"
-  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +9,7 @@
     "build-storybook": "build-storybook",
     "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start"
   },
   "author": "",
   "license": "ISC",
