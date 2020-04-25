@@ -45,7 +45,7 @@ const Contact = () => {
       <CustomButton text="email" color="#73B47D" onClick={() => {
          //step 3 - connect the state function to an interaction or figure out when you wnat to update the interface
          setHeader(headers_arr[index]);
-         // setImg(header_arr[index].img); 
+         // setImg(header_arr[index].img) ;
          index++;
          if (index > headers_arr.length - 1) {
             index = 0
