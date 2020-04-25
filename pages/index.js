@@ -4,8 +4,15 @@ import {FaAndroid} from 'react-icons/fa';
 import {IoLogoOctocat} from 'react-icons/io';
 import "./index.css"
 
-function ClickIndex(){
+import {data, ChangeData} from "./data.js";
 
+console.log("doesn't reload, loads only once", data);
+
+function ClickIndex(){
+    ChangeData({
+        lastaction:"went to chat",
+        numClicks: 0
+    })
     document.querySelector(".main_app").style.left = "-100%";
     setTimeout(function(){
         Router.push("/ChatPage");
@@ -37,5 +44,3 @@ const Index = () => <div className="main_app">
     </div>
 
 export default Index;
-
-

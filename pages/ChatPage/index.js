@@ -6,6 +6,10 @@ import Header from "../../comps/Header";
 import Input from "../../comps/Input";
 import {FaTrash} from 'react-icons/fa';
 
+import {data, ChangeData} from "../data";
+
+console.log("doesn't reload, loads only once", data);
+
 // var welcome_state = "welcome to my app"
 // function ChangeWelcome(){
 //     welcome_state = "start with sending a msg";
@@ -13,6 +17,7 @@ import {FaTrash} from 'react-icons/fa';
 // }
 
 const ChatPage = () => {
+    console.log("reloads everytime the component is used", data);
     const [welcome, setWelcome] = useState("welcome to my app");
     const [msg, setMsg] = useState("pls type smthng");
     const [resp, setResp] = useState("pls respond");
@@ -41,9 +46,9 @@ const ChatPage = () => {
                 setMsg(val);
                 var new_resp = CheckResponse(val);
                 setResp(new_resp);
-                // if (val === "hi") {
-                //     setResp("i love pi")
-                // }
+                if (val === "hi") {
+                    setResp("i love pi")
+                }
             }} />
         </div>
         <div className="custom_button">
@@ -59,15 +64,18 @@ const ChatPage = () => {
 }
 
 function CheckResponse(inp) {
+    var num = data.numClicks;
+    ChangeData({
+        lastaction:"Clicked send",
+        numClicks:num+1,
+    })
     switch (inp.toLowerCase) {
         case "hi":
             return "i love pi";
         case "how are you":
             return "great";
-
         default:
             return "idk what ur saying";
-
     }
 }
 
