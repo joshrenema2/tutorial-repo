@@ -26,7 +26,6 @@ const ChatPage = () => {
     }, []);
 
     return <div id="chatpage">
-        <FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/><FaTrash/>
         <div className="welcome">
             <Header fontSize={16} text={welcome} />
         </div>
@@ -54,6 +53,7 @@ const ChatPage = () => {
             }}
             //setText setColor
             />
+            <FaTrash/>
         </div>
     </div>
 }
