@@ -21,6 +21,7 @@ const Contact = () => {
    const [header_text, setHeader] = useState("contact me!");
    // const [img_url, setImg] = useState("");
    const [pageright, setRight] = useState("-100%");
+   const [pageleft, setLeft] = useState("-100%");
 
    useEffect(() => {
       //what to do when its lifecycle starts/ just created
@@ -29,25 +30,16 @@ const Contact = () => {
       }, 50)
    }, []);
 
-   return ()=>{
-      //what to do when a component dies
-
-   }
-
    useEffect(() => {
       //what to do when state in the page update
-      setRight(20);
+      setLeft(20);
       setTimeout(() => {
-         setRight(0);
+         setLeft(0);
       }, 500);
    }, [header_text]);
 
-   useEffect(() => {
-      setHeader("changed!" + pageright)
-   }, [pageright]);
-
    //step 2 - connect the state variable to the ui
-   return <div id="contactpage" style={{ right: pageright }}>
+   return <div id="contactpage" style={{ right: pageright, left:pageleft }}>
       <Header text={header_text} fontSize="16pt" />
       {/* <img src={img_url} /> */}
       <CustomButton text="email" color="#73B47D" onClick={() => {

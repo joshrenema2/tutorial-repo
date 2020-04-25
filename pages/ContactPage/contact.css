@@ -1,4 +1,5 @@
 #contactpage{
     position:relative;
     transition:right 1s;
+    transition:left 1s;
 }
