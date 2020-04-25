@@ -11,7 +11,7 @@ class MyDocument extends Document {
             <Html>
                 <Head />
                 <body>
-                    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"></link>
                     <Main />
                     <NextScript />
                 </body>
